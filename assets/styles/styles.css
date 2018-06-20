@@ -12138,17 +12138,17 @@ label.css-label:before {
 ----------------------------------------- */
 .wrapper {
   position: relative;
-  padding-bottom: 80px;
+  padding-bottom: 140px;
   min-height: 100%;
 }
 @media (max-width: 857px) {
   .wrapper {
-    padding-bottom: 120px;
+    padding-bottom: 180px;
   }
 }
 @media (max-width: 480px) {
   .wrapper {
-    padding-bottom: 150px;
+    padding-bottom: 210px;
   }
 }
 /* ---------------------------------------
@@ -17728,6 +17728,13 @@ label.css-label:before {
   transform: scale(1.05);
 }
 /* ---------------------------------------
+    ABOUT
+----------------------------------------- */
+.about {
+  padding: 40px 0;
+  line-height: 1.7;
+}
+/* ---------------------------------------
     FOOTER
 ----------------------------------------- */
 footer.footer {
@@ -17760,18 +17767,31 @@ footer.footer .info {
   float: left;
   color: #fff;
   margin-left: 40px;
-  width: calc(100% - 186px);
+  padding-right: 60px;
+  width: calc(100% - 286px);
 }
 @media (max-width: 480px) {
   footer.footer .info {
     float: initial;
     width: auto;
+    padding-right: 0;
     margin-left: 0;
+    margin-bottom: 8px;
   }
 }
 footer.footer .info p {
   margin-bottom: 0;
-  line-height: 1.2;
+  line-height: 1.3;
+}
+footer.footer .verify {
+  float: left;
+  width: 180px;
+}
+@media (max-width: 480px) {
+  footer.footer .verify {
+    float: initial;
+    width: auto;
+  }
 }
 .verify-modal.modal {
   text-align: center;
