@@ -1,0 +1,65 @@
+.custom-input {
+    border: 1px solid @main-color;
+    border-radius: 5px;
+    color: #000;
+    font-size: 20px;
+    height: 46px;
+    padding: 4px 15px 0;
+    transition: all .3s ease 0s;
+    width: 100%;
+    &:focus {
+        box-shadow: 0 0 6px 1px rgba(0, 153, 204, 0.6);
+    }
+    &.uppercase {
+        text-transform: uppercase;
+    }
+}
+
+.custom-textarea {
+    border: 1px solid @main-color;
+    border-radius: 5px;
+    color: #000;
+    font-size: 20px;
+    height: 200px;
+    padding: 8px 15px;
+    transition: all .3s ease 0s;
+    width: 100%;
+    resize: none;
+    &:focus {
+        box-shadow: 0 0 6px 1px rgba(0, 153, 204, 0.6);
+    }
+    &.uppercase {
+        text-transform: uppercase;
+    }
+}
+
+.error-message {
+    color: #e74c3c;
+    margin-top: 3px;
+    font-size: 13px;
+}
+
+.input-has-icon {
+    position: relative;
+    .custom-input {
+        padding-right: 50px;
+    }
+    .icon {
+        position: absolute;
+        top: 7px;
+        right: 15px;
+    }
+    .icon-2 {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+    }
+    .icon-3 {
+        position: absolute;
+        top: 10px;
+        left: 15px;
+        + .custom-input {
+            padding: 0 10px 0 50px;
+        }
+    }
+}
